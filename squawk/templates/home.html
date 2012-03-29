@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+    <ul>
+    {% for s in squawks %}
+        <li>{{s.text}}</li>
+    {% endfor %}
+    </ul>
 {% endblock content %}
