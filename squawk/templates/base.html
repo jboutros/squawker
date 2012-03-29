@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name = "viewport" content = "width = device-width, initial-scale=1, maximum-scale=1">
+    {% block meta %}{% endblock meta %}
+    <title>Squawker</title>
+    {% block css %}{% endblock css %}
+    {% block jquery %}{% endblock jquery %}
+</head>
+<body>
+    {% block body %}
+        <div class="content">
+            {% block content_header %}
+                <h1>Squawker.com</h1>
+            {% endblock content_header %}
+
+            {% block content %}
+                <h3>Welcome to Squawker!</h3>
+            {% endblock content %}
+        </div>
+        {% block bottomjs %}{% endblock bottomjs %}
+    {% endblock body %}
+</body>
+</html>
