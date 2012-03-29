@@ -6,7 +6,9 @@
     <meta name = "viewport" content = "width = device-width, initial-scale=1, maximum-scale=1">
     {% block meta %}{% endblock meta %}
     <title>Squawker</title>
-    {% block css %}{% endblock css %}
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/bootstrap.css" />
+    {% endblock css %}
     {% block jquery %}{% endblock jquery %}
 </head>
 <body>
