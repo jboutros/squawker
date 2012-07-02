@@ -14,7 +14,7 @@ def squawk_list(request):
             s.save()
     
     squawk_form = AddSquawkForm()
-    squawks = Squawk.objects.all()
+    squawks = Squawk.objects.all().order_by('-id')
     c= {}
     c['squawks'] = squawks
     c['form'] = squawk_form

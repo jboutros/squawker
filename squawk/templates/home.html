@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
  
 {% block content %}
+{% if user.is_authenticated %}
 <form method="post">
     {{ form.as_p }}
     {% csrf_token %}
     <input type="submit" title="Submit Squawk"/>
 </form>
+{% endif %}
 <ul>
     {% for s in squawks %}
         <li>{{s.text}}</li>
